@@ -1,0 +1,26 @@
+<!-- ==== Contact Us ==== -->        
+    <section class="contact-section">
+        <div class="row">
+            <div class="col-44">
+                <form action='{% url "contact_us"%}' method="post">
+                {% csrf_token %}
+                <h2>Contact Us</h2>
+                <p>Send us a message today</p>
+                <br>
+                <input type="name" placeholder="name" name="name" required>
+                <input type="email" placeholder="email"  name="email" required>
+                <input type="mobile_number" placeholder="89X XXXX XX6" name="mobile_number" required>
+                <textarea rows="3" name="text">Message</textarea>
+                <button type="submit"> Submit <i class='bx bx-right-arrow-alt'></i> </button>
+                </form>
+            </div>
+            <div class="col-44">
+                <div class="highlight"><h6>- CONTACT US -</h6></div>
+                <h2>Get in touch with us today & our team will assist you</h2>
+                <br>
+                <p>Our experts would love to contribute their expertise and insights and help you today. Contact us to help you plan your next transaction, either buying or selling a home.</p>
+                <br>
+                <a href=""><i class='bx bx-phone contact-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bx-envelope contact-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bxl-whatsapp contact-icon'></i></a>&nbsp;&nbsp; <a href=""><i class='bx bx-map contact-icon'></i></a>
+            </div>
+        </div>
+    </section>
